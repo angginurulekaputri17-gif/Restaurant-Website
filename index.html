@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavora Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <a href="#home" class="logo">♨ Flavora<span>RESTAURANT</span></a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reservations">Reservations</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="btn nav-btn" href="#reservations">Book a Table</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Good Food, Good Mood ♡</p>
+        <h1>Delicious Food<br /><em>Made with Love</em></h1>
+        <p class="hero-description">
+          Experience the perfect blend of taste, quality and happiness in every
+          bite.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#menu">Explore Menu</a>
+          <a class="btn btn-outline" href="#reservations">Book a Table</a>
+        </div>
+        <div class="highlights">
+          <span>✧ Fresh Ingredients</span>
+          <span>✧ Expert Chefs</span>
+          <span>✧ Great Ambience</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about section" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">About Us</p>
+          <h2>We Serve<br /><em>Happiness</em></h2>
+          <p>
+            At Flavora, we believe that great food brings people together. Every
+            dish is prepared with fresh ingredients and a passion for
+            perfection.
+          </p>
+          <a class="btn" href="#contact">Learn More About Us →</a>
+        </div>
+        <img
+          class="about-image"
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
+          alt="Elegant restaurant dining room"
+        />
+        <div class="experience">
+          <strong>10+</strong>
+          <span>Years of<br />Experience</span>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Our Menu</p>
+          <h2>Popular Dishes</h2>
+          <p>Discover the flavors everyone loves.</p>
+        </div>
+        <div class="food-grid" id="foodGrid"></div>
+        <p class="cart-summary" id="cartSummary" aria-live="polite">
+          Your cart is empty.
+        </p>
+      </section>
+
+      <section class="reservation-banner" id="reservations">
+        <div>
+          <p>♧ Book Your Table</p>
+          <h2>Reserve Your Table Now!</h2>
+          <p>Good food is better when shared.</p>
+        </div>
+        <a class="btn" href="#contact">Book a Table →</a>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Our Moments</p>
+          <h2>A Taste of Flavora</h2>
+        </div>
+        <div class="gallery-grid">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
+            alt="Restaurant interior"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+            alt="Freshly prepared food"
+          />
+        </div>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">We'd Love to See You</p>
+          <h2>Contact & Reservations</h2>
+        </div>
+        <form id="reservationForm" class="reservation-form">
+          <label>
+            Your Name
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label>
+            Email Address
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </label>
+          <label>
+            Reservation Date
+            <input type="date" name="date" id="reservationDate" required />
+          </label>
+          <label>
+            Number of Guests
+            <select name="guests" required>
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5+">5+ guests</option>
+            </select>
+          </label>
+          <label class="full-width">
+            Special Requests
+            <textarea
+              name="requests"
+              rows="3"
+              placeholder="Any special requests?"
+            ></textarea>
+          </label>
+          <button class="btn full-width" type="submit">
+            Request a Reservation
+          </button>
+          <p id="formMessage" class="full-width" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a href="#home" class="logo">♨ Flavora<span>RESTAURANT</span></a>
+        <p>
+          We serve delicious food, great vibes,<br />and unforgettable moments.
+        </p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#about">About Us</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h3>Opening Hours</h3>
+        <p>Monday – Friday<br />11:00 AM – 10:00 PM</p>
+        <p>Saturday – Sunday<br />10:00 AM – 11:00 PM</p>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>☎ +123 456 78900</p>
+        <p>✉ info@flavora.com</p>
+        <p>⌖ 123 Food Street</p>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Flavora Restaurant. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
